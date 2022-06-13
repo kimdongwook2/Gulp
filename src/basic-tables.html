@@ -1,0 +1,297 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-tables"
+})
+@@include('element-top-area.htm', {	
+"active": "elements-tables"
+})
+
+<!-- =============================================
+## tables
+=============================================== -->
+<div id="tables" class="element_single">
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					Default Tables
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						&lt;&gt;  show code
+					</a>
+				</h2>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+					<div class="code_container">
+						
+						<pre class="language-html">
+<code>
+	&lt;table class="table">
+		&lt;thead>
+			&lt;tr>
+				&lt;th>#&lt;/th>
+				&lt;th>First Name&lt;/th>
+				&lt;th>Last Name&lt;/th>
+				&lt;th>Username&lt;/th>
+			&lt;/tr>
+		&lt;/thead>
+		&lt;tbody>
+			&lt;tr>
+				&lt;th scope="row">1&lt;/th>
+				&lt;td>Mark&lt;/td>
+				&lt;td>Otto&lt;/td>
+				&lt;td>@mdo&lt;/td>
+			&lt;/tr>
+			&lt;tr>
+				&lt;th scope="row">2&lt;/th>
+				&lt;td>Jacob&lt;/td>
+				&lt;td>Thornton&lt;/td>
+				&lt;td>@fat&lt;/td>
+			&lt;/tr>
+			&lt;tr>
+				&lt;th scope="row">3&lt;/th>
+				&lt;td>Larry&lt;/td>
+				&lt;td>the Bird&lt;/td>
+				&lt;td>@twitter&lt;/td>
+			&lt;/tr>
+		&lt;/tbody>
+	&lt;/table>
+
+	&lt;!-- table-inverse -->
+	&lt;table class="table table-inverse">
+
+	&lt;/table>
+
+	&lt;!-- table-striped -->
+	&lt;table class="table table-striped">
+
+	&lt;/table>
+
+	&lt;!-- table-bordered -->
+	&lt;table class="table table-bordered">
+
+	&lt;/table>
+
+	&lt;!-- color stripped table rows -->
+	&lt;tr class="table-info">
+	  &lt;th scope="row">5&lt;/th>
+	  &lt;td>Column content&lt;/td>
+	  &lt;td>Column content&lt;/td>
+	  &lt;td>Column content&lt;/td>
+	&lt;/tr>
+</code>		
+						</pre>
+						<h5>How to use</h5>
+
+						<ul>
+							<li><strong>All table styles are inherited in Bootstrap 4</strong> meaning any nested tables will be styled in the same manner as the parent.</li>
+							<li>Use <span class="s highlighter">.table-inverse</span> class with table to get inverse style</li>
+							<li>Use <span class="s highlighter">.table-striped</span> class with table to get striped table style</li>
+							<li>Use <span class="s highlighter">.table-bordered</span> class with table to get bordered style</li>
+							<li>You can use contextual classes (<span class="s highlighter">.table-active</span> ,<span class="s highlighter">.table-success</span> ,<span class="s highlighter">.table-info</span> ,<span class="s highlighter">.table-warning</span> ,<span class="s highlighter">.table-danger</span> ) to color table rows or individual cells.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p style="font-size: 18px">Example</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Username</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Larry</td>
+					<td>the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 style="margin: 30px 0">Table Dark</h3>
+		<table class="table table-dark">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Username</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Larry</td>
+					<td>the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 style="margin: 30px 0">Table striped</h3>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Username</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Larry</td>
+					<td>the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 style="margin: 30px 0">Table bordered</h3>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Username</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Larry</td>
+					<td>the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 style="margin: 30px 0">Color Striped Table rows</h3>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Column heading</th>
+					<th>Column heading</th>
+					<th>Column heading</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="table-active">
+					<th scope="row">1</th>
+					<td>Column content</td>
+					<td>Column content</td>
+					<td>Column content</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Column content</td>
+					<td>Column content</td>
+					<td>Column content</td>
+				</tr>
+				<tr class="table-success">
+					<th scope="row">3</th>
+					<td>Column content</td>
+					<td>Column content</td>
+					<td>Column content</td>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>Column content</td>
+					<td>Column content</td>
+					<td>Column content</td>
+				</tr>
+				<tr class="table-info">
+					<th scope="row">5</th>
+					<td>Column content</td>
+					<td>Column content</td>
+					<td>Column content</td>
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td>Column content</td>
+					<td>Column content</td>
+					<td>Column content</td>
+				</tr>
+				<tr class="table-warning">
+					<th scope="row">7</th>
+					<td>Column content</td>
+					<td>Column content</td>
+					<td>Column content</td>
+				</tr>
+				<tr>
+					<th scope="row">8</th>
+					<td>Column content</td>
+					<td>Column content</td>
+					<td>Column content</td>
+				</tr>
+				<tr class="table-danger">
+					<th scope="row">9</th>
+					<td>Column content</td>
+					<td>Column content</td>
+					<td>Column content</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- Tables here -->
+	
+</div>
+
+@@include('element-footer.htm')

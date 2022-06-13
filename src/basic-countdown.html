@@ -1,0 +1,172 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-countdown"
+})
+@@include('element-top-area.htm',{
+	"active": "elements-countdown"
+})
+
+
+<!-- =============================================
+## countdown
+=============================================== -->
+<div id="countdown" class="element_single">
+<!-- countdown Default -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					Countdown Timer
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+				   <div class="code_container">
+						
+						<pre class="language-html">
+<code>
+	&lt;div class="count-down no-title">
+		&lt;div class="slider_timer ">&lt;/div>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<p>This countdown is designed using <a href="https://github.com/mrfratello/SyoTimer" target="_blank"><mark>syotimer</mark></a> jquery plugin. You can find the whole documentation of how to use it in the website. Here are some instructions for the example design as shown: </p>
+						<ul>
+							<li>Use <span class="s highlighter">.count-down</span> wrapper for all timer</li>
+							<li>The <span class="s highlighter">.no-title</span> class used if you dont want to show Days, Hours, Minutes, Seconds as caption </li>
+							<li> Use a class or id as a hook to javascript as the following example
+								<pre class="language-javascript">
+<code>
+	$('.slider_timer ').syotimer({
+		year: 2018,		
+		month: 5,
+		day: 9,
+		hour: 20,
+		minute: 30
+	});
+</code>								
+								</pre>	
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+	<p>Example</p>
+		<div class="count-down no-title">
+
+			<div class="slider_timer "></div>
+		 </div>
+	</div>
+	<!-- countdown Default ends-->
+	<!-- Optional Styles -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingTwo">
+				<h3 class="mb-0">
+					Timer With Title
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="card-block">
+				   <div class="code_container">
+						
+						<pre class="language-html">
+<code>
+	&lt;!-- Default -->
+	&lt;div class="count-down titled">
+		&lt;div class="slider_timer ">&lt;/div>
+	&lt;/div>
+
+	&lt;!-- Circled -->
+	&lt;div class="count-down titled circled">
+		&lt;div class="slider_timer ">&lt;/div>
+	&lt;/div>
+
+	&lt;!-- colored background -->
+	&lt;div class="count-down bg-primary colored-bg text-center titled circled">
+		&lt;div class="slider_timer ">&lt;/div>
+	&lt;/div>
+
+	&lt;!-- Image background -->
+	&lt;div class="count-down bg-image titled circled" style="background-image: url('../..');">
+		&lt;div class="slider_timer ">&lt;/div>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<p>For the different customization follow the instructions: </p>
+						<ul>
+							<li> Use a class or id as a hook to javascript as the following example
+								<pre class="language-javascript">
+<code>
+	$('.slider_timer ').syotimer({
+		year: 2018,		
+		month: 5,
+		day: 9,
+		hour: 20,
+		minute: 30
+	});
+</code>								
+								</pre>	
+							</li>
+							<li>The <span class="s highlighter">.titled</span> class is used to show Days, Hours, Minutes, Seconds as caption </li>
+							<li>Use the <span class="s highlighter">.circled</span> class with <span class="s highlighter">.count-down</span> for the circle timer</li>
+							<li>The <span class="s highlighter">.bg-image</span> class let's you to set a image as background </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+	<p>Example</p>
+		<div class="count-down titled">
+
+			<div class="slider_timer "></div>
+		 </div>
+	</div>
+
+	<h3 style="margin: 30px 0">Circled </h3>
+
+	<div class="display-single_element">
+	<p>Example</p>
+		<div class="count-down titled circled">
+
+			<div class="slider_timer "></div>
+		 </div>
+	</div>
+	<h3 style="margin: 30px 0">Colored Background </h3>
+	<div class="display-single_element">
+	<p>Example</p>
+		<div class="count-down bg-primary colored-bg text-center titled circled">
+
+			<div class="slider_timer "></div>
+		 </div>
+	</div>
+
+	<h3 style="margin: 30px 0">Image Background </h3>
+	<div class="display-single_element">
+	<p>Example</p>
+		<div class="count-down bg-image titled circled" style="background-image: url('img/about-us/store-bg.jpg');">
+
+			<div class="slider_timer "></div>
+		</div>
+	</div>
+
+	
+</div>
+
+@@include('element-footer.htm')

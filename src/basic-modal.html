@@ -1,0 +1,153 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-modal"
+})
+@@include('element-top-area.htm',{
+	"active": "elements-modal"
+})
+
+
+<!-- =============================================
+## modal
+=============================================== -->
+<div id="element_modal" class="element_single">
+	<!-- modal Default -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					Bootstrap Modal
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						&lt;&gt;  show code
+					</a>
+				</h2>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+<code>
+	&lt;div class=" " id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+			&lt;div class="modal-dialog modal-lg">
+				&lt;div class="modal-content">
+					&lt;div class="modal-body">
+						&lt;button type="button" class="close push-xs-right" data-dismiss="modal" aria-label="Close">
+							&lt;i class="fa fa-close">&lt;/i>
+						&lt;/button>
+						&lt;div class="container-fluid modal-item">
+
+							all modal contents
+
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+
+		&lt;div class="modal fade " id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+			&lt;div class="modal-dialog modal-lg">
+
+			&lt;/div>
+		&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<p>First one is a static modal. Modals are hidden by default.</p>
+						<ul>
+							<li>To embed in your page use <span class="s highlighter">.modal</span> class (see second code example)</li>
+							<li>Be sure to set a unique id on the <span class="s highlighter"> .modal </span> for optional controls, especially if you’re using multiple Modal on a single page.</li>
+							<li>You can change the modal pop up window style and position using <span class="s highlighter">.modal-dialog</span> class</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+		<p>Example</p>
+		<!-- MODALS -->
+		<h3 style="margin-bottom: 20px;">Static Modal</h3>
+		<div class="quick-view-drone" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+						<div class="media flex-wrap">
+							<div class="media-left px-0">
+								<img class="media-object" src="assets/img/home/featured-product/product-img14.jpg" alt="Image">
+							</div>
+							<div class="media-body">
+								<h2>Modal Title</h2>
+								<h3>Subtitle</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste excepturi obcaecati expedita provident necessitatibus magnam enim recusandae debitis culpa?</p>
+								
+								<div class="btn-area">
+									<a href="#" class="btn btn-primary btn-block">Button/Link <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+		<h3 style="margin-bottom: 20px;">Working Modal</h3>
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2">
+			Click here
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade quick-view-drone" id="exampleModalLong2" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+						<div class="media flex-wrap">
+							<div class="media-left px-0">
+								<img class="media-object" src="assets/img/home/featured-product/product-img14.jpg" alt="Image">
+							</div>
+							<div class="media-body">
+								<h2>Automatic HD Drone</h2>
+								<h3>$1049</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste excepturi obcaecati expedita provident necessitatibus magnam enim recusandae debitis culpa?</p>
+								<span class="quick-drop">
+									<select name="guiest_id3" id="guiest_id3" class="select-drop">
+										<option value="0">Category</option>
+										<option value="1">Category 1</option>
+										<option value="2">Category 2</option>
+										<option value="3">Category 3</option>
+									</select>
+								</span>
+								<span class="quick-drop resizeWidth">
+									<select name="guiest_id4" id="guiest_id4" class="select-drop">
+										<option value="0">Qty</option>
+										<option value="1">Qty 1</option>
+										<option value="2">Qty 2</option>
+										<option value="3">Qty 3</option>
+									</select>
+								</span>
+								<div class="btn-area">
+									<a href="#" class="btn btn-primary btn-block">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal Default ends-->
+
+</div>
+<style media="screen">
+
+</style>
+
+@@include('element-footer.htm')

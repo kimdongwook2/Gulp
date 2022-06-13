@@ -1,0 +1,471 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-card"
+})
+@@include('element-top-area.htm', {
+	"active": "elements-card"
+})
+
+<!-- =============================================
+## Cards
+=============================================== -->
+<div id="cards_element" class="element_single">
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					Cards
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+	<code>
+		&lt;!-- Default Card style -->
+		&lt;div class="card">
+		  &lt;div class="card_img">
+			&lt;a href="">&lt;img class="img-full" src="..." alt="Card image">&lt;/a>
+		  &lt;/div>
+		  &lt;div class="card-block">
+			&lt;a href="#">&lt;h3 class="card-title">Card title&lt;/h3>&lt;/a>
+			&lt;span>tagline&lt;/span>
+			&lt;p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor&lt;/p>
+			&lt;a href="" class="btn btn-primary">Read more&lt;/a>
+		  &lt;/div>
+		&lt;/div>
+
+		&lt;!-- image in the middle -->
+		&lt;div class="card img-mid">
+		  &lt;div class="card-block">
+			&lt;a href="#">&lt;h3 class="card-title">Card title&lt;/h3>&lt;/a>
+			&lt;span>card tagline&lt;/span>
+			&lt;div class="card_img">
+				&lt;a href="">&lt;img class="img-full" src="..." alt="Card image">&lt;/a>
+			&lt;/div>
+			&lt;p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor&lt;/p>
+			&lt;a href="" class="btn btn-primary">Read more&lt;/a>
+		  &lt;/div>
+		&lt;/div>
+
+		&lt;!-- image at the bottom -->
+		&lt;div class="card img-bottom">
+		  &lt;div class="card-block">
+			&lt;a href="#">&lt;h3 class="card-title">Card title&lt;/h3>&lt;/a>
+			&lt;span>card tagline&lt;/span>
+			&lt;p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor&lt;/p>
+			&lt;a href="" class="btn btn-primary">Read more&lt;/a>
+		  &lt;/div>
+		  &lt;div class="card_img">
+			&lt;a href="">&lt;img class="img-full" src="..." alt="Card image">&lt;/a>
+		  &lt;/div>
+		&lt;/div>
+
+		&lt;!-- Overlay contents on image -->
+		&lt;div class="card card-inverse">
+		  &lt;img class="card-img" src="assets/img/blog/card.jpg" alt="Card image">
+		  &lt;div class="card-img-overlay">
+			&lt;h3 class="card-title">Card with overlay&lt;/h3>
+			&lt;p class="card-text">Lorem ipsum dolor sit amet, consec tetur adipisicing elit sed.&lt;/p>
+		  &lt;/div>
+		&lt;/div>
+	</code>
+						</pre>
+						<h5>How to use</h5>
+						<p>Card is a super content container in bootstrap 4. Here’s how to use it:</p>
+						<ul>
+							<li>Wrap all content in the <span class="s highlighter">.card</span> wrapper</li>
+							<li>Use <span class="s highlighter">.card_img</span> as image wrapper</li>
+							<li>By default card image are top aligned. For middle and bottom aligned image use <span class="s highlighter">.img-mid</span> and <span class="s highlighter">.img-bottom</span> with <span class="s highlighter">.card</span></li>
+							<li>The <span class="s highlighter">.card-inverse</span> sets an overlay on image. The contents should be wrapped into <span class="s highlighter">.card-img-overlay</span> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p>Example: </p>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card_img">
+						<a href="">
+							<img class="card-img-top" src="assets/img/about-us/people-01.jpg" alt="card img">
+						</a>
+					</div>
+					<div class="card-block">
+						<a href="#"><h3 class="card-title">Card title</h3></a>
+						<span>Sub-title</span>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor</p>
+						<a href="" class="btn btn-primary">Read more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card img-mid">
+					<div class="card-block">
+						<a href="#"><h3 class="card-title">Card title</h3></a>
+						<span>Sub-title</span>
+						<div class="card_img">
+							<a href="">
+								<img class="card-img-top" src="assets/img/about-us/people-04.jpg" alt="card img">
+							</a>
+						</div>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor</p>
+						<a href="" class="btn btn-primary">Read more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card img-bottom">
+					<div class="card-block">
+						<a href="#"><h3 class="card-title">Card title</h3></a>
+						<span>Sub-title</span>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor</p>
+						<a href="" class="btn btn-primary">Read more</a>
+					</div>
+					<div class="card_img">
+						<a href="">
+							<img class="card-img-top" src="assets/img/about-us/people-03.jpg" alt="card img">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cards Deck ends here -->
+
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingTen">
+				<h3 class="mb-0">
+					Card Deck
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingTen">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+<code>
+	&lt;div class="card-deck">
+	  &lt;div class="card">
+		&lt;div class="card_img">
+			&lt;a href="">&lt;img class="img-full" src="assets/img/gallery/g1.jpg" alt="Card image">&lt;/a>
+		&lt;/div>
+		&lt;div class="card-block">
+		  &lt;a href="#">&lt;h3 class="card-title">Card title&lt;/h3>&lt;/a>
+		  &lt;span>by &lt;span>&lt;a href="" class="text-primary" >Admin&lt;/a> &lt;/span>&lt;/span> | &lt;span>&lt;a href="">0  Comts&lt;/a>&lt;/span>
+		  &lt;p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor&lt;/p>
+		  &lt;a href="" class="btn btn-primary">Read more&lt;/a>
+		&lt;/div>
+	  &lt;/div>
+	 &lt;div class="card">
+	   &lt;div class="card_img">
+		&lt;a href="">&lt;img class="img-full" src="assets/img/gallery/g1.jpg" alt="Card image">&lt;/a>
+	   &lt;/div>
+	   &lt;div class="card-block">
+		 &lt;a href="#">&lt;h3 class="card-title">Card title&lt;/h3>&lt;/a>
+		 &lt;span>by &lt;span>&lt;a href="" class="text-primary" >Admin&lt;/a> &lt;/span>&lt;/span> | &lt;span>&lt;a href="">0  Comts&lt;/a>&lt;/span>
+		 &lt;p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor&lt;/p>
+		 &lt;a href="" class="btn btn-primary">Read more&lt;/a>
+	   &lt;/div>
+	 &lt;/div>
+	  &lt;div class="card">
+		&lt;div class="card_img">
+			&lt;a href="">&lt;img class="img-full" src="assets/img/gallery/g1.jpg" alt="Card image">&lt;/a>
+		&lt;/div>
+		&lt;div class="card-block">
+		  &lt;a href="#">&lt;h3 class="card-title">Card title&lt;/h3>&lt;/a>
+		  &lt;span>by &lt;span>&lt;a href="" class="text-primary" >Admin&lt;/a> &lt;/span>&lt;/span> | &lt;span>&lt;a href="">0  Comts&lt;/a>&lt;/span>
+		  &lt;p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor&lt;/p>
+		  &lt;a href="" class="btn btn-primary">Read more&lt;/a>
+		&lt;/div>
+	  &lt;/div>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>Wrap all card contents in <span class="s highlighter">.card-deck</span> wrapper. Each of the cards in card deck uses base card styles</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p>Example: </p>
+		<div class="card-deck">
+			<div class="card">
+				<div class="card_img">
+					<a href="">
+						<img class="card-img-top" src="assets/img/about-us/people-01.jpg" alt="card img">
+					</a>
+				</div>
+				<div class="card-block">
+					<a href="#"><h3 class="card-title">Card title</h3></a>
+					<span>Sub-title</span>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor</p>
+					<a href="" class="btn btn-primary">Read more</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card_img">
+					<a href="">
+						<img class="card-img-top" src="assets/img/about-us/people-03.jpg" alt="card img">
+					</a>
+				</div>
+				<div class="card-block">
+					<a href="#"><h3 class="card-title">Card title</h3></a>
+					<span>Sub-title</span>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor</p>
+					<a href="" class="btn btn-primary">Read more</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card_img">
+					<a href="">
+						<img class="card-img-top" src="assets/img/about-us/people-04.jpg" alt="card img">
+					</a>
+				</div>
+				<div class="card-block">
+					<a href="#"><h3 class="card-title">Card title</h3></a>
+					<span>Sub-title</span>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor</p>
+					<a href="" class="btn btn-primary">Read more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Cards deck ends here -->
+	
+
+	<!-- Card ribbons -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingThree">
+				<h3 class="mb-0">
+					Card Ribbons
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+<code>
+	<!-- top Left -->
+	&lt;div class="card card-body text-center">
+      &lt;div class="card-ribbon card-ribbon-top card-ribbon-left bg-primary text-white">Popular&lt;/div>
+      &lt;h4 class="card-title">
+        Ribbon
+      &lt;/h4>
+      &lt;p class="card-text">With supporting text below as a natural lead-in to additional content.&lt;/p>
+      &lt;a href="#" class="btn btn-sm mt-3 btn-primary">Go somewhere&lt;/a> 
+    &lt;/div>
+	
+	&lt;!-- top right -->
+    &lt;div class="card-ribbon card-ribbon-top card-ribbon-right bg-faded ">Best Value&lt;/div>
+
+    &lt;!-- bottom left -->
+    &lt;div class="card-ribbon card-ribbon-bottom card-ribbon-left bg-info text-white">popular&lt;/div>
+      
+    &lt;!-- bottom right -->
+	&lt;div class="card-ribbon card-ribbon-bottom card-ribbon-right bg-primary text-white">Best Value&lt;/div>
+     
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>use the <span class="s highlighter">.card-ribbon</span> wrapper inside the <span class="s highlighter">.card</span> and use the following classes for proper positioning </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p class="mb-3">Example</p>
+		<div class="row justify-content-md-center">
+			<div class="col-md-4">
+				<div class="card card-body text-center">
+		          <div class="card-ribbon card-ribbon-top card-ribbon-left bg-primary text-white">Popular</div>
+		          <h4 class="card-title">
+		            Ribbon
+		          </h4>
+		          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		          <a href="#" class="btn btn-sm mt-3 btn-primary">Go somewhere</a> 
+		        </div>
+			</div>
+			
+			<!-- top right -->
+			<div class="col-md-4 ml-md-4">
+				<div class="card card-body text-center">
+                  <div class="card-ribbon card-ribbon-top card-ribbon-right bg-faded ">Best Value</div>
+                  <h4 class="card-title">
+                    Ribbon
+                  </h4>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary btn-sm mt-3">Go somewhere</a> 
+                </div>
+			</div>
+
+			<!-- bottom left -->
+			<div class="col-md-4">
+				<div class="card card-body text-center">
+                  <div class="card-ribbon card-ribbon-bottom card-ribbon-left bg-info text-white">popular</div>
+                  <h4 class="card-title">
+                    Ribbon
+                  </h4>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary btn-sm mt-3">Go somewhere</a> 
+                </div>
+			</div>
+
+			<!-- bottom right -->
+			<div class="col-md-4 ml-md-4">
+				<div class="card card-body text-center">
+                  <div class="card-ribbon card-ribbon-bottom card-ribbon-right bg-primary text-white">Best Value</div>
+                  <h4 class="card-title">
+                    Ribbon
+                  </h4>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary btn-sm mt-3">Go somewhere</a> 
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- Cards Styles ends here -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingTwo">
+				<h3 class="mb-0">
+					Card Styles
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+<code>
+	&lt;div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+	  &lt;div class="card-header">Header&lt;/div>
+	  &lt;div class="card-body">
+	    &lt;h4 class="card-title">Primary card title&lt;/h4>
+	    &lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p>
+	  &lt;/div>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>Use any background color to <span class="s highlighter">.card</span> or color classes with it. Examples uses the contextual classes.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<h5 class="mb-3">Background color </h5>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+				    <h4 class="card-title">Primary</h4>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+				    <h4 class="card-title">Secondary</h4>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+				    <h4 class="card-title">Success</h4>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+				    <h4 class="card-title">Danger</h4>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+				    <h4 class="card-title">Warning</h4>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+				    <h4 class="card-title">Info</h4>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card bg-light mb-3" style="max-width: 20rem;">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+				    <h4 class="card-title">Light</h4>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+				  <div class="card-header">Header</div>
+				  <div class="card-body">
+				    <h4 class="card-title">Dark</h4>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Cards Styles ends here -->
+</div>
+
+@@include('element-footer.htm')

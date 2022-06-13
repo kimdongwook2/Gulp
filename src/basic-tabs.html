@@ -1,0 +1,546 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-tabs"
+})
+@@include('element-top-area.htm', {
+"active": "elements-tabs"
+})
+
+<!-- =============================================
+## navs
+=============================================== -->
+<div id="navs" class="element_single">
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					Tabs
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						&lt;&gt;  show code
+					</a>
+				</h2>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+<code>
+	&lt;ul class="nav nav-tabs nav-justified icon_tabs" role="tablist">
+		&lt;li class="nav-item text-center">
+			&lt;a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">
+				&lt;i class="fa fa-cube">&lt;/i>
+				&lt;h3>Massage Therapy&lt;/h3>
+			&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item text-center">
+			&lt;a class="nav-link" href="#tab2" role="tab" data-toggle="tab">...&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item text-center">
+			&lt;a class="nav-link" href="#tab3" role="tab" data-toggle="tab">...&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item text-center">
+			&lt;a class="nav-link" href="#tab4" role="tab" data-toggle="tab">...&lt;/a>
+		&lt;/li>
+	&lt;/ul>
+	&lt;div class="tab-content">
+		&lt;div role="tabpanel" class="tab-pane fade show active" id="tab1">
+			&lt;div class="row">
+				&lt;div class="col-md-5">
+					&lt;div class="service_image">
+						&lt;img src="..." alt="image">
+					&lt;/div>
+				&lt;/div>
+				&lt;div class=" col-md-7">
+					&lt;div class="tab-content_left styled_list">
+						&lt;h3>Massage Therapy&lt;/h3>
+						&lt;p>
+							....
+						&lt;/p>
+						&lt;ul class="tab-content_list">
+							&lt;li class="">....&lt;/li>
+						&lt;/ul>
+						&lt;a href="#" class="btn btn-primary btn-default">Read More&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+
+	&lt;!-- Border bottom style nav tabs -->
+	&lt;ul class="nav nav-tabs bar_tabs" role="tablist">
+		&lt;li class="nav-item text-center">
+			&lt;a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">
+				&lt;i class="fa fa-cube">&lt;/i>
+				&lt;h3>Massage Therapy&lt;/h3>
+			&lt;/a>
+		&lt;/li>
+	&lt;/ul>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<p> Here’s how:</p>
+						<ul>
+							<li><span class="s highlighter">.icon_tabs</span> used with <span class="s highlighter">.nav-tabs</span> for iconic navigation tab menu</li>
+							<li><span class="s highlighter">.bar_tabs</span> used with <span class="s highlighter">.nav-tabs</span> for Border bottom styled  nav tabs shown in example 2</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p>Example</p>
+
+		<!-- Nav Bar Tabs row starts here -->
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav nav-tabs bar-tabs justify-content-center" role="tablist">
+					<li class="nav-item text-center">
+						<a class="nav-link active" href="#tabOne" role="tab" data-toggle="tab">
+							<h5>Title 1</h5>
+						</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link" href="#tabTwo" role="tab" data-toggle="tab">
+							<h5>Title 2</h5>
+						</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link" href="#tabThree" role="tab" data-toggle="tab">
+							<h5>Title 3</h5>
+						</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link" href="#tabFour" role="tab" data-toggle="tab">
+							<h5>Title 4</h5>
+						</a>
+					</li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade show active" id="tabOne">
+						<div class="row tab-content">
+							<div class="col-md-5 order-12">
+								<div class="service_image">
+									<img class="img-fluid" src="assets/img/about-us/about.png" alt="image">
+								</div>
+							</div>
+							<div class=" col-md-7 order-1">
+								<div class="tab-content_left styled_list">
+									<h3 class="mb-3">Tab Content Title</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore magna aliqua.ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+										in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspici
+										atis unde omnis iste natus error sit voluptatem.
+									</p>
+									<ul class="tab-content_list styled_list">
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Fringilla dolor ullamcorper.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Dolor ullamcorp faucibu.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Tempus velit venenatis.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Magna laoreet augue interdum.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Laoreet augue interdum et.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Posuere magna mollis lectus.</a></li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="tabTwo">
+						<div class="row tab-content">
+							<div class="col-md-5 order-12">
+								<div class="service_image">
+									<img class="img-fluid" src="assets/img/about-us/about.png" alt="image">
+								</div>
+							</div>
+							<div class=" col-md-7 order-1">
+								<div class="tab-content_left styled_list">
+									<h3 class="mb-3">Tab Content Title</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore magna aliqua.ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+										in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspici
+										atis unde omnis iste natus error sit voluptatem.
+									</p>
+									<ul class="tab-content_list">
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Fringilla dolor ullamcorper.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Dolor ullamcorp faucibu.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Tempus velit venenatis.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Magna laoreet augue interdum.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Laoreet augue interdum et.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Posuere magna mollis lectus.</a></li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="tabThree">
+						<div class="row tab-content">
+							<div class="col-md-5 order-12">
+								<div class="service_image">
+									<img class="img-fluid" src="assets/img/about-us/about.png" alt="image">
+								</div>
+							</div>
+							<div class=" col-md-7 order-1">
+								<div class="tab-content_left styled_list">
+									<h3 class="mb-3">Tab Content Title</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore magna aliqua.ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+										in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspici
+										atis unde omnis iste natus error sit voluptatem.
+									</p>
+									<ul class="tab-content_list">
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Fringilla dolor ullamcorper.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Dolor ullamcorp faucibu.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Tempus velit venenatis.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Magna laoreet augue interdum.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Laoreet augue interdum et.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Posuere magna mollis lectus.</a></li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="tabFour">
+						<div class="row tab-content">
+							<div class="col-md-5 order-12">
+								<div class="service_image">
+									<img class="img-fluid" src="assets/img/about-us/about.png" alt="image">
+								</div>
+							</div>
+							<div class=" col-md-7 order-1">
+								<div class="tab-content_left styled_list">
+									<h3 class="mb-3">Tab Content Title</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore magna aliqua.ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+										in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspici
+										atis unde omnis iste natus error sit voluptatem.
+									</p>
+									<ul class="tab-content_list">
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Fringilla dolor ullamcorper.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Dolor ullamcorp faucibu.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Tempus velit venenatis.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Magna laoreet augue interdum.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Laoreet augue interdum et.</a></li>
+										<li class=""><a href="#"><i class="fa fa-circle-o"></i> Posuere magna mollis lectus.</a></li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- Nav Bar Tabs row ends here -->
+	</div>
+	<!-- Base nav ends here -->
+
+	<!-- nav tabs start -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingTwo">
+				<h3 class="mb-0">
+					Nav Tab styles
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						&lt;&gt;  show code
+					</a>
+				</h2>
+			</div>
+
+			<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html">
+<code>
+	&lt;!-- nav tabs -->
+	&lt;ul class="nav nav-tabs" role="tablist">
+		&lt;li class="nav-item">
+			&lt;a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item">
+			&lt;a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item">
+			&lt;a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item">
+			&lt;a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings&lt;/a>
+		&lt;/li>
+	&lt;/ul>
+	&lt;!-- Tab panes -->
+	&lt;div class="tab-content tab-bordered">
+		&lt;div class="tab-pane active" id="home" role="tabpanel">Lorem ipsum dolor sit amet..&lt;/div>
+		&lt;div class="tab-pane" id="profile" role="tabpanel">Lorem ipsum dolor sit ..&lt;/div>
+		&lt;div class="tab-pane" id="messages" role="tabpanel">Lorem ipsum dolor si...&lt;/div>
+		&lt;div class="tab-pane" id="settings" role="tabpanel">Lorem ipsum dolor sit am...&lt;/div>
+	&lt;/div>
+
+	&lt;!-- nav-pills -->
+	&lt;ul class="nav nav-tabs nav-pills" role="tablist">
+
+	&lt;/ul>
+
+	&lt;!-- Simple tabs without border -->
+	&lt;ul class="nav nav-tabs nav-unbordered" role="tablist">
+
+	&lt;/ul>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li><span class="s highlighter">.nav-tabs</span> for tabs navigation</li>
+							<li><span class="s highlighter">.nav-pills</span> with <span class="s highlighter">.nav-tabs</span>  for filled navigation tabs</li>
+							<li>To allow border around the content use <span class="s highlighter">.tab-bordered</span> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+	<h3 style="margin-bottom: 30px">Default tabs</h3>
+		<p>Example</p>
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+			</li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content tab-bordered">
+			<div class="tab-pane active" id="home" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, alias veniam. Beatae nisi illum explicabo minima, voluptatem earum alias dolores, laboriosam vitae hic et ducimus optio dicta quasi assumenda necessitatibus, quas rerum enim qui, ab. Magni id omnis tenetur, nulla, error expedita delectus saepe possimus nam fugiat praesentium voluptatem autem!</div>
+			<div class="tab-pane" id="profile" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt, rerum nemo, mollitia libero odit doloribus non nam quasi quia sequi adipisci. Soluta quas beatae quia dolorum accusamus tenetur blanditiis et. Consequuntur ducimus totam facilis possimus soluta, eligendi autem asperiores, aliquid repellat tempora ea, quaerat saepe consequatur quos reprehenderit, temporibus.</div>
+			<div class="tab-pane" id="messages" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptates, doloremque unde debitis similique, molestiae facilis minus consequuntur cupiditate eius suscipit sed voluptate dolorum tempora corrupti expedita aperiam doloribus provident et. Esse eius dolores voluptatum mollitia laudantium cumque accusantium excepturi perspiciatis, repudiandae ipsum voluptates sapiente tempora modi corrupti eveniet, architecto.</div>
+			<div class="tab-pane" id="settings" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ex iure veniam nulla mollitia quaerat totam, sit hic, perspiciatis dignissimos officiis dolorum ipsam. Deleniti, quo. Deserunt aliquid atque maiores. Vitae, praesentium hic necessitatibus soluta explicabo quas quibusdam eius, reiciendis optio, minima similique, tempora provident fuga laboriosam. Assumenda eveniet, obcaecati tempore!</div>
+		</div>
+	</div>
+	<h3 style="margin: 30px 0">Tabs with nav pills</h3>
+	<div class="display-single_element">
+		<p>Example</p>
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs nav-pills" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#pill1" role="tab">pill1</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#pill2" role="tab">pill2</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#pill3" role="tab">pill3</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#pill4" role="tab">pill4</a>
+			</li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content tab-bordered">
+			<div class="tab-pane active" id="pill1" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, alias veniam. Beatae nisi illum explicabo minima, voluptatem earum alias dolores, laboriosam vitae hic et ducimus optio dicta quasi assumenda necessitatibus, quas rerum enim qui, ab. Magni id omnis tenetur, nulla, error expedita delectus saepe possimus nam fugiat praesentium voluptatem autem!</div>
+			<div class="tab-pane" id="pill2" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt, rerum nemo, mollitia libero odit doloribus non nam quasi quia sequi adipisci. Soluta quas beatae quia dolorum accusamus tenetur blanditiis et. Consequuntur ducimus totam facilis possimus soluta, eligendi autem asperiores, aliquid repellat tempora ea, quaerat saepe consequatur quos reprehenderit, temporibus.</div>
+			<div class="tab-pane" id="pill3" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptates, doloremque unde debitis similique, molestiae facilis minus consequuntur cupiditate eius suscipit sed voluptate dolorum tempora corrupti expedita aperiam doloribus provident et. Esse eius dolores voluptatum mollitia laudantium cumque accusantium excepturi perspiciatis, repudiandae ipsum voluptates sapiente tempora modi corrupti eveniet, architecto.</div>
+			<div class="tab-pane" id="pill4" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ex iure veniam nulla mollitia quaerat totam, sit hic, perspiciatis dignissimos officiis dolorum ipsam. Deleniti, quo. Deserunt aliquid atque maiores. Vitae, praesentium hic necessitatibus soluta explicabo quas quibusdam eius, reiciendis optio, minima similique, tempora provident fuga laboriosam. Assumenda eveniet, obcaecati tempore!</div>
+		</div>
+	</div>
+	<h3 style="margin: 30px 0">Tabs without content border </h3>
+	<div class="display-single_element">
+		<p>Example</p>
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#example1" role="tab">example1</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#example2" role="tab">example2</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#example3" role="tab">example3</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#example4" role="tab">example4</a>
+			</li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane active" id="example1" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, alias veniam. Beatae nisi illum explicabo minima, voluptatem earum alias dolores, laboriosam vitae hic et ducimus optio dicta quasi assumenda necessitatibus, quas rerum enim qui, ab. Magni id omnis tenetur, nulla, error expedita delectus saepe possimus nam fugiat praesentium voluptatem autem!</div>
+			<div class="tab-pane" id="example2" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt, rerum nemo, mollitia libero odit doloribus non nam quasi quia sequi adipisci. Soluta quas beatae quia dolorum accusamus tenetur blanditiis et. Consequuntur ducimus totam facilis possimus soluta, eligendi autem asperiores, aliquid repellat tempora ea, quaerat saepe consequatur quos reprehenderit, temporibus.</div>
+			<div class="tab-pane" id="example3" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptates, doloremque unde debitis similique, molestiae facilis minus consequuntur cupiditate eius suscipit sed voluptate dolorum tempora corrupti expedita aperiam doloribus provident et. Esse eius dolores voluptatum mollitia laudantium cumque accusantium excepturi perspiciatis, repudiandae ipsum voluptates sapiente tempora modi corrupti eveniet, architecto.</div>
+			<div class="tab-pane" id="example4" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ex iure veniam nulla mollitia quaerat totam, sit hic, perspiciatis dignissimos officiis dolorum ipsam. Deleniti, quo. Deserunt aliquid atque maiores. Vitae, praesentium hic necessitatibus soluta explicabo quas quibusdam eius, reiciendis optio, minima similique, tempora provident fuga laboriosam. Assumenda eveniet, obcaecati tempore!</div>
+		</div>
+	</div>
+	<!-- nav-tabs Link ends -->
+
+	<!-- Justified tabs -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingThree">
+				<h3 class="mb-0">
+					Justified nav
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						&lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+<code>
+	&lt;ul class="nav nav-tabs nav-pills nav-justified" role="tablist">
+		&lt;li class="nav-item">
+			&lt;a class="nav-link active" data-toggle="tab" href="#jutified1" role="tab">jutified1&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item">
+			&lt;a class="nav-link" data-toggle="tab" href="#justified2" role="tab">justified2&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item">
+			&lt;a class="nav-link" data-toggle="tab" href="#justified3" role="tab">justified3&lt;/a>
+		&lt;/li>
+		&lt;li class="nav-item">
+			&lt;a class="nav-link" data-toggle="tab" href="#justified4" role="tab">justified4&lt;/a>
+		&lt;/li>
+	&lt;/ul>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li><span class="s highlighter">. nav-justified</span> class make justified tab menus</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+		<p>Example</p>
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs nav-pills nav-justified" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#jutified1" role="tab">jutified1</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#justified2" role="tab">justified2</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#justified3" role="tab">justified3</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#justified4" role="tab">justified4</a>
+			</li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane active" id="jutified1" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, alias veniam. Beatae nisi illum explicabo minima, voluptatem earum alias dolores, laboriosam vitae hic et ducimus optio dicta quasi assumenda necessitatibus, quas rerum enim qui, ab. Magni id omnis tenetur, nulla, error expedita delectus saepe possimus nam fugiat praesentium voluptatem autem!</div>
+			<div class="tab-pane" id="justified2" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt, rerum nemo, mollitia libero odit doloribus non nam quasi quia sequi adipisci. Soluta quas beatae quia dolorum accusamus tenetur blanditiis et. Consequuntur ducimus totam facilis possimus soluta, eligendi autem asperiores, aliquid repellat tempora ea, quaerat saepe consequatur quos reprehenderit, temporibus.</div>
+			<div class="tab-pane" id="justified3" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptates, doloremque unde debitis similique, molestiae facilis minus consequuntur cupiditate eius suscipit sed voluptate dolorum tempora corrupti expedita aperiam doloribus provident et. Esse eius dolores voluptatum mollitia laudantium cumque accusantium excepturi perspiciatis, repudiandae ipsum voluptates sapiente tempora modi corrupti eveniet, architecto.</div>
+			<div class="tab-pane" id="justified4" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ex iure veniam nulla mollitia quaerat totam, sit hic, perspiciatis dignissimos officiis dolorum ipsam. Deleniti, quo. Deserunt aliquid atque maiores. Vitae, praesentium hic necessitatibus soluta explicabo quas quibusdam eius, reiciendis optio, minima similique, tempora provident fuga laboriosam. Assumenda eveniet, obcaecati tempore!</div>
+		</div>
+	</div>
+	<!-- Pills with dropdowns -->
+
+	<!-- Vertical tabs -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingFour">
+				<h3 class="mb-0">
+					Vertical Tabs
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+						&lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+<code>
+	&lt;div class="row ">
+		&lt;div class="col-sm-4">
+			&lt;ul class="nav nav-tabs nav-stacked">
+				&lt;li class="nav-item">&lt;a href="#vtab1" class="nav-link active" data-toggle="tab" aria-expanded="true"> Home&lt;/a>&lt;/li>
+				&lt;li class="nav-item">&lt;a href="#vtab2" class="nav-link" data-toggle="tab" aria-expanded="false"> Profile&lt;/a>&lt;/li>
+				&lt;li class="nav-item">&lt;a href="#vtab3" class="nav-link" data-toggle="tab"> Contact&lt;/a>&lt;/li>
+			&lt;/ul>
+		&lt;/div>
+		&lt;div class="tab-content col-sm-8">
+			&lt;div class="tab-pane fade active show" id="vtab1" aria-expanded="true">
+				&lt;h4>Massage Therapy&lt;/h4>
+				&lt;p>Lorem ipsum dolor sit amet... &lt;/p>
+			&lt;/div>
+			&lt;div class="tab-pane fade" id="vtab2" aria-expanded="false">
+				&lt;h4>Massage Therapy&lt;/h4>
+				&lt;p>Lodistinctio voluptatibus, consequuntur vero neque.&lt;/p>
+			&lt;/div>
+			&lt;div class="tab-pane fade" id="vtab3">
+				&lt;h4>Massage Therapy&lt;/h4>
+				&lt;p>Loremquo esse nesciunt.&lt;/p>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>Use <span class="s highlighter">.nav-stacked</span> with <span class="s highlighter">.nav-tabs</span> wrapper to make child elements get the style for vertical tabs</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+		<p>Example</p>
+		<div class="row ">
+			<div class="col-sm-4">
+				<ul class="nav nav-tabs nav-stacked">
+					<li class="nav-item"><a href="#vtab1" class="nav-link active" data-toggle="tab" aria-expanded="true"><i class="fa fa-home"></i> Home</a></li>
+					<li class="nav-item"><a href="#vtab2" class="nav-link" data-toggle="tab" aria-expanded="false"><i class="fa fa-user"></i> Profile</a></li>
+					<li class="nav-item"><a href="#vtab3" class="nav-link" data-toggle="tab"><i class="fa fa-phone"></i> Contact</a></li>
+				</ul>
+			</div>
+			<div class="tab-content col-sm-8 ">
+				<div class="tab-pane fade active show no-padding" id="vtab1" aria-expanded="true">
+					<h4 style="margin-bottom: 15px;">Lorem ipsum dolor</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod illo sint molestias illum magnam vero, quisquam dolorem consequuntur modi quam sed ex repellendus a veniam ipsa quia dolorum voluptatem facere.</p>
+				</div>
+				<div class="tab-pane fade no-padding" id="vtab2" aria-expanded="false">
+					<h4 style="margin-bottom: 15px;">Lorem ipsum dolor</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iusto eum doloribus nam obcaecati dolorem minus rem dolores velit, corporis similique, dolor sunt fugit ipsam distinctio voluptatibus, consequuntur vero neque.</p>
+				</div>
+				<div class="tab-pane fade no-padding" id="vtab3">
+					<h4 style="margin-bottom: 15px;">Lorem ipsum dolor</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laudantium reprehenderit facere, pariatur, eligendi libero nostrum quia deserunt nihil facilis, quo esse nesciunt.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Vertical Tabs end -->
+
+
+</div>
+
+@@include('element-footer.htm')

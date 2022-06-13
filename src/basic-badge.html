@@ -1,0 +1,157 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-badge"
+})
+@@include('element-top-area.htm',{
+	"active": "elements-badge"
+})
+
+
+<!-- =============================================
+## Badge
+=============================================== -->
+<div id="badge" class="element_single">
+	<!-- badge Default -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block element">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					Badge
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						&lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html">
+<code>
+	&lt;h1>Example heading &lt;span class="badge badge-default">New&lt;/span>&lt;/h1>
+	&lt;h2>Example heading &lt;span class="badge badge-default">New&lt;/span>&lt;/h2>
+	&lt;h3>Example heading &lt;span class="badge badge-default">New&lt;/span>&lt;/h3>
+	&lt;h4>Example heading &lt;span class="badge badge-default">New&lt;/span>&lt;/h4>
+	&lt;h5>Example heading &lt;span class="badge badge-default">New&lt;/span>&lt;/h5>
+	&lt;h6>Example heading &lt;span class="badge badge-default">New&lt;/span>&lt;/h6>
+
+	&lt;!-- Example - 2 -->
+	&lt;button type="button" class="btn btn-secondary">Notifications&lt;span class="badge badge-secondary">5&lt;/span>&lt;/button>
+	&lt;button type="button" class="btn btn-secondary">Profile&lt;span class="badge badge-secondary">2&lt;/span>&lt;/button>
+	&lt;button type="button" class="btn btn-secondary">Message&lt;span class="badge badge-secondary">10&lt;/span>&lt;/button>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<p>Small and adaptive tag for adding context to just about any content.</p>
+						<ul>
+							<li>Use the <span class="s highlighter">.badge</span> class with <span class="nt highlighter">&lt;span&gt;</span> element inside main element.</li>
+						</ul>
+				   	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element element_badge ">
+		<div class="row">
+			<div class="col-md-12">
+				<p>Example 1</p>
+				<h1>Example heading <span class="badge badge-default">New</span></h1>
+				<h2>Example heading <span class="badge badge-default">New</span></h2>
+				<h3>Example heading <span class="badge badge-default">New</span></h3>
+				<h4>Example heading <span class="badge badge-default">New</span></h4>
+				<h5>Example heading <span class="badge badge-default">New</span></h5>
+				<h6>Example heading <span class="badge badge-default">New</span></h6>
+			</div>
+			<div class="col-md-12 pt-5">
+				<p>Example 2</p>
+				<button type="button" class="btn btn-secondary mb-3">Notifications<span class="badge badge-secondary">5</span></button>
+				<button type="button" class="btn btn-secondary mb-3">Profile<span class="badge badge-secondary">2</span></button>
+				<button type="button" class="btn btn-secondary mb-3">Message<span class="badge badge-secondary">10</span></button>
+			</div>
+			
+		</div>
+	</div>
+	<!-- badge Default ends-->
+
+	<!-- contextual variations -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingTwo">
+				<h3 class="mb-0">
+					Variations
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html">
+<code>	
+	&lt;span class="badge badge-primary">Primary&lt;/span>
+	&lt;span class="badge badge-secondary">Secondary&lt;/span>
+	&lt;span class="badge badge-success">Success&lt;/span>
+
+	&lt;!-- Pill badge -->
+	&lt;span class="badge badge-pill badge-primary">Primary&lt;/span>
+	&lt;span class="badge badge-pill badge-secondary">Secondary&lt;/span>
+	&lt;span class="badge badge-pill badge-success">Success&lt;/span>
+
+	&lt;!-- Link Badge -->
+	&lt;a href="#" class="badge badge-primary">Primary&lt;/a>
+	&lt;a href="#" class="badge badge-secondary">Secondary&lt;/a>
+	&lt;a href="#" class="badge badge-success">Success&lt;/a>
+</code>
+						</pre>
+						<h5>How to use variation</h5>
+						<ul>
+							<li>To get prestyled badge just use the <span class="s highlighter">.badge-default</span> or <span class="s highlighter">.badge-primary</span> or <span class="s highlighter">.badge-success</span> or <span class="s highlighter">.badge-info</span> or <span class="s highlighter">.badge-warning</span> or <span class="s highlighter">.badge-danger</span> class with <span class="s highlighter">.badge</span> class.</li>
+						</ul>
+				   	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element element_badge">
+		<div class="row">
+			<div class="col-md-12 mb-3">
+				<p>Example 01</p>
+				<span class="badge badge-primary mb-3">Primary</span>
+				<span class="badge badge-secondary mb-3">Secondary</span>
+				<span class="badge badge-success mb-3">Success</span>
+				<span class="badge badge-danger mb-3">Danger</span>
+				<span class="badge badge-warning mb-3">Warning</span>
+				<span class="badge badge-info mb-3">Info</span>
+				<span class="badge badge-light mb-3">Light</span>
+				<span class="badge badge-dark mb-3">Dark</span>
+			</div>
+			<div class="col-md-12 mb-3 mt-4">
+				<p>Example 02: Pill badge</p>
+				<span class="badge badge-pill badge-primary mb-3">Primary</span>
+				<span class="badge badge-pill badge-secondary mb-3">Secondary</span>
+				<span class="badge badge-pill badge-success mb-3">Success</span>
+				<span class="badge badge-pill badge-danger mb-3">Danger</span>
+				<span class="badge badge-pill badge-warning mb-3">Warning</span>
+				<span class="badge badge-pill badge-info mb-3">Info</span>
+				<span class="badge badge-pill badge-light mb-3">Light</span>
+				<span class="badge badge-pill badge-dark mb-3">Dark</span>
+			</div>
+			<div class="col-md-12 mb-3 mt-4">
+				<p>Example 03: Link badge</p>
+				<a href="#" class="badge badge-primary mb-3">Primary</a>
+				<a href="#" class="badge badge-secondary mb-3">Secondary</a>
+				<a href="#" class="badge badge-success mb-3">Success</a>
+				<a href="#" class="badge badge-danger mb-3">Danger</a>
+				<a href="#" class="badge badge-warning mb-3">Warning</a>
+				<a href="#" class="badge badge-info mb-3">Info</a>
+				<a href="#" class="badge badge-light mb-3">Light</a>
+				<a href="#" class="badge badge-dark mb-3">Dark</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+@@include('element-footer.htm')

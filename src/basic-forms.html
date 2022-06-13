@@ -1,0 +1,710 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-form"
+})
+@@include('element-top-area.htm', {
+	"active": "elements-forms"
+})
+
+<!-- =============================================
+## Forms
+=============================================== -->
+<div id="forms" class="element_single">
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					Basic Form Example
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+<code>
+	&lt;form >
+		&lt;div class="row">
+			&lt;div class="form-group col-md-6">
+			  &lt;input type="text" class="form-control" id="exampleInputName" aria-describedby="userName" placeholder="Enter email">
+			&lt;/div>
+			&lt;div class="form-group col-md-6">
+			  &lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			&lt;/div>
+			&lt;div class="form-group col-md-12">
+			  &lt;input type="number" class="form-control" id="exampleInputPhone" placeholder="Phone">
+			&lt;/div>
+			&lt;div class="form-group col-md-12">
+			   &lt;textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Your message">&lt;/textarea>
+			&lt;/div>
+		&lt;/div>
+		&lt;button type="submit" class="btn btn-default btn-primary">Send message&lt;/button>
+	&lt;/form>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>Use <span class="s highlighter">.form-control</span> (for inputs, selects, etc) and <span class="s highlighter">.form-group</span> for wrappers for style and layout forms.</li>
+						</ul>
+				   </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+	<p>Example: </p>
+		<form >
+			<div class="row">
+				<div class="form-group col-md-6">
+				  <input type="text" class="form-control" id="exampleInputName" aria-describedby="userName" placeholder="Enter email">
+				</div>
+				<div class="form-group col-md-6">
+				  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				</div>
+				<div class="form-group col-md-12">
+				  <input type="number" class="form-control" id="exampleInputPhone" placeholder="Phone">
+				</div>
+				<div class="form-group col-md-12">
+				   <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Your message"></textarea>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-default btn-primary">Send message</button>
+		</form>
+	</div>
+	<!-- Default Form ends here -->
+
+	<!-- Form Textual inputs start -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingTwo">
+				<h3 class="mb-0">
+					Textual inputs
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html">
+<code>
+	&lt;form >
+		&lt;div class="form-group row">
+			&lt;label for="example-text-input" class="col-md-2 col-form-label">Name of Card&lt;/label>
+			&lt;div class="col-md-10">
+				&lt;input class="form-control" type="text" placeholder="Name of Card">
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="form-group row">
+			&lt;label for="example-search-input" class="col-md-2 col-form-label">Card Number&lt;/label>
+			&lt;div class="col-md-10">
+				&lt;input class="form-control" type="text" placeholder="#### . #### . ####">
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="form-group row">
+			&lt;label for="example-datetime-local-input" class="col-md-2 col-form-label">Expires On&lt;/label>
+			&lt;div class="col-md-10">
+				&lt;input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="form-group row">
+			&lt;label for="example-password-input" class="col-md-2 col-form-label">Security code&lt;/label>
+			&lt;div class="col-md-10">
+				&lt;input class="form-control" type="text" value="CVC" placeholder="CVC">
+				&lt;i class="fa fa-question-circle helpText" aria-hidden="true">&lt;/i>
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="form-group row">
+			&lt;label for="example-location" class="col-md-2 col-form-label">Country&lt;/label>
+			&lt;div class="col-md-10 selectOptions ">
+				&lt;select name="country" class="form-control select-drop">
+					&lt;option>Select Country&lt;/option>
+					&lt;option>countryname&lt;/option>
+					&lt;option>countryname&lt;/option>
+					&lt;option>countryname&lt;/option>
+				&lt;/select>
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="form-group row">
+			&lt;label for="example-postal-code" class="col-md-2 col-form-label">Postal code&lt;/label>
+			&lt;div class="col-md-10">
+				&lt;input class="form-control" type="text" placeholder="Postal code">
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="row">
+			&lt;div class="col-md-10 offset-md-1">
+				&lt;div class="form-check ">
+					&lt;input id="checkbox-1" class="checkbox-custom form-check-input" name="checkbox-1" type="checkbox" checked>
+					&lt;label for="checkbox-1" class="checkbox-custom-label form-check-label">Remember this card&lt;/label>
+
+				&lt;/div>
+				&lt;button class="btn btn-primary btn-default card-btn" type="submit">use this card&lt;/button>
+			&lt;/div>
+		&lt;/div>
+	&lt;/form>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>These are some bootstrap basic form elements using boostrap default classes</li>
+							<li>Select box designed using <a href="https://github.com/danilvalov/jquery.selectbox"><mark>Jquery-selectmox</mark></a> Plugin</li>
+							<li>To call the selectbox from your main js file copy the following code to your javascript file.
+								<pre class="language-javascript">
+<code>
+	$('.classname').selectbox();
+</code>
+								</pre>
+							</li>
+						</ul>
+				   </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element text_input">
+		<p>Example</p>
+		<div class="form-check">
+			<input id="radio-1" class="radio-custom form-check-input" name="radio-group" type="radio" checked>
+			<label class="form-check-label radio-custom-label">
+				Pay with your Card
+			</label>
+		</div>
+		<form >
+			<div class="form-group row">
+				<label for="example-text-input" class="col-md-12 col-form-label">Name of Card</label>
+				<div class="col-md-10">
+					<input class="form-control" type="text" placeholder="Name of Card">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="example-search-input" class="col-md-12 col-form-label">Card Number</label>
+				<div class="col-md-10">
+					<input class="form-control" type="text" placeholder="#### . #### . ####">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="example-datetime-local-input" class="col-md-12 col-form-label">Expires On</label>
+				<div class="col-md-10">
+					<input class="form-control" type="datetime-local" value="2017-06-19T13:45:00" id="example-datetime-local-input">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="example-password-input" class="col-md-12 col-form-label">Security code</label>
+				<div class="col-md-10">
+					<input class="form-control" type="text" value="CVC" placeholder="CVC">
+					<i class="fa fa-question-circle helpText" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="example-location" class="col-md-12 col-form-label">Country</label>
+				<div class="col-md-10 selectOptions ">
+					<select name="country" class="form-control select-drop">
+						<option>Select Country</option>
+						<option>bangladesh</option>
+						<option>Usa</option>
+						<option>Singapore</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="example-postal-code" class="col-md-12 col-form-label">Postal code</label>
+				<div class="col-md-10">
+					<input class="form-control" type="text" placeholder="Postal code">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+					<div class="form-check ">
+						<input id="checkbox-1" class="checkbox-custom form-check-input" name="checkbox-1" type="checkbox" checked>
+						<label for="checkbox-1" class="checkbox-custom-label form-check-label">Remember this card</label>
+
+					</div>
+					<button class="btn btn-primary btn-default card-btn" type="submit">use this card</button>
+				</div>
+			</div>
+		</form>
+		<span class="or">or</span>
+		<div class="form-check">
+			<input id="radio-2" class="radio-custom form-check-input" name="radio-group" type="radio">
+			<label class="form-check-label radio-custom-label">
+				Pay with <img src="assets/img/paypal.png" alt="">
+			</label>
+		</div>
+	</div>
+		<!-- Forms Textual inputs ends -->
+
+	<!-- Checkbox start -->
+		<div id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="card single-block">
+				<div class="card-header" role="tab" id="headingThree">
+					<h3 class="mb-0">
+						Checkbox
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						  &lt;&gt;  show code
+						</a>
+					</h3>
+				</div>
+
+				<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="card-block">
+						<div class="code_container">
+
+							<pre class="language-html">
+<code>
+	&lt;!-- Default Checked -->
+	&lt;div class="form-check ">
+		&lt;input id="checkbox-1" class="checkbox-custom form-check-input" name="checkbox-1" type="checkbox" checked>
+		&lt;label for="checkbox-1" class="checkbox-custom-label form-check-label default-checked">Default Checked&lt;/label>
+	&lt;/div>
+
+	&lt;!-- Unchecked -->
+	&lt;div class="form-check ">
+		&lt;input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
+		&lt;label for="checkbox-2" class="checkbox-custom-label form-check-label ">Unchecked&lt;/label>
+	&lt;/div>
+
+	&lt;!-- Checked -->
+	&lt;div class="form-check ">
+		&lt;input id="checkbox-3" class="checkbox-custom form-check-input" name="checkbox-3" type="checkbox" checked>
+		&lt;label for="checkbox-3" class="checkbox-custom-label form-check-label">Checked&lt;/label>
+	&lt;/div>
+
+	&lt;!-- Disabled unchecked -->
+	&lt;div class="form-check ">
+		&lt;input id="checkbox-4" class="checkbox-custom form-check-input" name="checkbox-4" type="checkbox" disabled>
+		&lt;label for="checkbox-4" class="checkbox-custom-label form-check-label">Disabled unchecked&lt;/label>
+	&lt;/div>
+
+	&lt;!-- Disabled Checked -->
+	&lt;div class="form-check ">
+		&lt;input id="checkbox-5" class="checkbox-custom form-check-input" name="checkbox-5" type="checkbox" checked disabled>
+		&lt;label for="checkbox-5" class="checkbox-custom-label form-check-label disable-checked">Disabled Checked&lt;/label>
+	&lt;/div>
+</code>
+							</pre>
+							<h5>how to use</h5>
+							<ul>
+								<li>Use <span class="s highlighter">.checkbox-custom</span> with checkbox type <span class="nt highlighter">&lt;input&gt;</span> element</li>
+								<li>use <span class="nt highlighter">&lt;label&gt;</span> element after <span class="nt highlighter">&lt;input&gt;</span> and give the class <span class="s highlighter">.checkbox-custom-label</span></li>
+							</ul>
+					   </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="display-single_element">
+			<p>Example</p>
+			<form >
+				<div class="row">
+					<div class="col-md-8">
+						<div class="form-check ">
+							<input id="checkbox-1" class="checkbox-custom form-check-input" name="checkbox-1" type="checkbox" checked>
+							<label for="checkbox-1" class="checkbox-custom-label form-check-label default-checked">Default Checked</label>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="form-check ">
+							<input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
+							<label for="checkbox-2" class="checkbox-custom-label form-check-label ">Unchecked</label>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="form-check ">
+							<input id="checkbox-3" class="checkbox-custom form-check-input" name="checkbox-3" type="checkbox" checked>
+							<label for="checkbox-3" class="checkbox-custom-label form-check-label">Checked</label>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="form-check ">
+							<input id="checkbox-4" class="checkbox-custom form-check-input" name="checkbox-4" type="checkbox" disabled>
+							<label for="checkbox-4" class="checkbox-custom-label form-check-label">Disabled unchecked</label>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="form-check ">
+							<input id="checkbox-5" class="checkbox-custom form-check-input" name="checkbox-5" type="checkbox" checked disabled>
+							<label for="checkbox-5" class="checkbox-custom-label form-check-label disable-checked">Disabled Checked</label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	<!-- Checkbox end -->
+
+<!-- Radio start -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingFour">
+				<h3 class="mb-0">
+					Radio Buttons
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html">
+<code>
+	&lt;!-- Default Checked radio -->
+	&lt;div class="form-check ">
+		&lt;input id="radio-1" class="radio-custom form-check-input" name="radio-group" type="radio" checked>
+		&lt;label for="radio-1" class="radio-custom-label form-check-label default-checked">Default Checked&lt;/label>
+	&lt;/div>
+
+	&lt;!-- Unchecked radio -->
+	&lt;div class="form-check ">
+		&lt;input id="radio-2" class="radio-custom form-check-input" name="radio-2" type="radio">
+		&lt;label for="radio-2" class="radio-custom-label form-check-label ">Unchecked&lt;/label>
+	&lt;/div>
+
+	&lt;!-- Checked radio -->
+	&lt;div class="form-check ">
+		&lt;input id="radio-3" class="radio-custom form-check-input" name="radio-3" type="radio" checked>
+		&lt;label for="radio-3" class="radio-custom-label form-check-label">Checked&lt;/label>
+	&lt;/div>
+
+	&lt;!-- Disabled unchecke radio -->
+	&lt;div class="form-check ">
+		&lt;input id="radio-4" class="radio-custom form-check-input" name="radio-4" type="radio" disabled>
+		&lt;label for="radio-4" class="radio-custom-label form-check-label">Disabled unchecked&lt;/label>
+	&lt;/div>
+
+	&lt;!-- Disabled Checked radio -->
+	&lt;div class="form-check ">
+		&lt;input id="radio-5" class="radio-custom form-check-input" name="radio-5" type="radio" checked disabled>
+		&lt;label for="radio-5" class="radio-custom-label form-check-label disable-checked">Disabled Checked&lt;/label>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>how to use</h5>
+						<ul>
+							<li>Use <span class="s highlighter">.radio-custom</span> with radio type <span class="nt highlighter">&lt;input&gt;</span> element</li>
+							<li>use <span class="nt highlighter">&lt;label&gt;</span> element after <span class="nt highlighter">&lt;input&gt;</span> and give the class <span class="s highlighter">.radio-custom-label</span></li>
+						</ul>
+				   </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p>Example</p>
+		<form >
+			<div class="row">
+				<div class="col-md-8">
+					<div class="form-check ">
+						<input id="radio-1" class="radio-custom form-check-input" name="radio-group" type="radio" checked>
+						<label for="radio-1" class="radio-custom-label form-check-label default-checked">Default Checked</label>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="form-check ">
+						<input id="radio-2" class="radio-custom form-check-input" name="radio-2" type="radio">
+						<label for="radio-2" class="radio-custom-label form-check-label ">Unchecked</label>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="form-check ">
+						<input id="radio-3" class="radio-custom form-check-input" name="radio-3" type="radio" checked>
+						<label for="radio-3" class="radio-custom-label form-check-label">Checked</label>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="form-check ">
+						<input id="radio-4" class="radio-custom form-check-input" name="radio-4" type="radio" disabled>
+						<label for="radio-4" class="radio-custom-label form-check-label">Disabled unchecked</label>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="form-check ">
+						<input id="radio-5" class="radio-custom form-check-input" name="radio-5" type="radio" checked disabled>
+						<label for="radio-5" class="radio-custom-label form-check-label disable-checked">Disabled Checked</label>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- Radio end -->
+
+	<!-- Using the Grid start -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingFive">
+				<h3 class="mb-0">
+					Login Form
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+					  &lt;&gt;  show code</a>
+				</h2>
+			</div>
+
+			<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+<code>
+	&lt;form  class="register">
+		&lt;div class="row">
+			&lt;div class="form-group col-md-12">
+				&lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+			&lt;/div>
+			&lt;div class="form-group col-md-12">
+				&lt;input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+			&lt;/div>
+		&lt;/div>
+		&lt;button type="submit" class="btn btn-default btn-primary btn-block">Log In&lt;/button>
+		&lt;div class="row">
+			&lt;div class="form-check col-md-6">
+				&lt;input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
+				&lt;label for="checkbox-2" class="checkbox-custom-label form-check-label ">Remember me&lt;/label>
+			&lt;/div>
+			&lt;div class="col-md-3 offset-md-3 text-right">
+				&lt;a href="" class="btn-link">Forgot password ?&lt;/a>
+			&lt;/div>
+		&lt;/div>
+		&lt;span class="or text-center">OR&lt;/span>
+		&lt;button type="submit" class="btn btn-default btn-facebook btn-block">Log in with Facebook&lt;/button>
+		&lt;button type="submit" class="btn btn-default btn-twitter btn-block">Log in with Twitter&lt;/button>
+	&lt;/form>
+	&lt;p class="form-footer">Don’t have an Account? <a href="" class="btn-link text-primary">Sign up</a></p>
+
+	&lt;!-- icon in the input field -->
+	&lt;div class="form-group col-md-12 input-icon">
+	  &lt;input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+	&lt;/div>
+</code>
+						</pre>
+						<h5>how to use</h5>
+						<ul>
+							<li>The both Login and signup form created using basic form style. You need to do is to specify <span class="s highlighter">.register</span> class with <span class="nt highlighter">.form</span> element </li>
+							<li>If you want to use icon in the input field you have to use a <span class="s highlighter">.input-icon</span> with <span class="s highlighter">.form-group</span> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+		<p>Example</p>
+		<h3 class="form_title">Log in your Account</h3>
+		<form  class="register">
+			<div class="row">
+				<div class="form-group col-md-12">
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+				</div>
+				<div class="form-group col-md-12">
+					<input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+				</div>
+			</div>
+			<button type="submit" class="btn btn-default btn-primary btn-block">Log In</button>
+			<div class="row">
+				<div class="form-check col-md-6">
+					<input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
+					<label for="checkbox-2" class="checkbox-custom-label form-check-label ">Remember me</label>
+				</div>
+				<div class="col-md-3 offset-md-3 text-right">
+					<a href="" class="btn-link">Forgot password ?</a>
+				</div>
+			</div>
+			<span class="or text-center">OR</span>
+			<button type="submit" class="btn btn-default btn-facebook btn-block">Log in with Facebook</button>
+			<button type="submit" class="btn btn-default btn-twitter btn-block">Log in with Twitter</button>
+		</form>
+		<p class="form-footer">Don’t have an Account? <a href="" class="btn-link text-primary">Sign up</a></p>
+	</div>
+
+	<div class="display-single_element">
+		<h3 class="form_title">Sign Up Form</h3>
+		<form  class="register">
+			<div class="row">
+				<div class="form-group col-md-12 input-icon">
+					<div class="input-group-addon"><i class="fa fa-user"></i></div>
+					<input type="text" class="form-control" id="uname" aria-describedby="fullName" placeholder="Full Name">
+				</div>
+				<div class="form-group col-md-12 input-icon">
+					<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+					<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+				</div>
+				<div class="form-group col-md-12 input-icon">
+					<div class="input-group-addon"><i class="fa fa-lock"></i></div>
+					<input type="password" class="form-control" id="password" placeholder="Password">
+				</div>
+			</div>
+			<button type="submit" class="btn btn-default btn-primary btn-block">Sign Up</button>
+			<div class="row">
+				<div class="form-check col-md-6">
+					<input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
+					<label for="checkbox-2" class="checkbox-custom-label form-check-label ">Remember me</label>
+				</div>
+				<div class="col-md-3 offset-md-3 text-right">
+					<a href="" class="btn-link">Forgot password ?</a>
+				</div>
+			</div>
+			<span class="or text-center">OR</span>
+			<button type="submit" class="btn btn-default btn-facebook btn-block">Log in with Facebook</button>
+			<button type="submit" class="btn btn-default btn-twitter btn-block">Log in with Twitter</button>
+		</form>
+		<p class="form-footer">Already have an Account? <a href="" class="btn-link text-primary">Log in</a></p>
+	</div>
+	<!-- Login / signup form end -->
+
+	<!-- Inline form start -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingSeven">
+				<h3 class="mb-0">
+					Inline Form
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+				<div class="card-block">
+					<div class="code_container">
+
+						<pre class="language-html">
+<code>
+	&lt;form class="form-inline">
+		&lt;label class="sr-only" for="uname">Username&lt;/label>
+		&lt;div class="input-group mb-2 mr-sm-2 mb-sm-0 input-icon">
+			&lt;div class="input-group-addon">&lt;i class="fa fa-user">&lt;/i>&lt;/div>
+			&lt;input type="text" class="form-control" id="uname" placeholder="Username">
+		&lt;/div>
+		&lt;label class="sr-only" for="email">email&lt;/label>
+		&lt;div class="input-group mb-2 mr-sm-2 mb-sm-0 input-icon">
+			&lt;div class="input-group-addon">&lt;i class="fa fa-envelope">&lt;/i>&lt;/div>
+			&lt;input type="email" class="form-control" id="email" placeholder="Email">
+		&lt;/div>
+		&lt;button type="submit" class="btn btn-primary btn-lg">Subscribe&lt;/button>
+	&lt;/form>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>Use <span class="s highlighter">.form-inline</span> with <span class="nt highlighter">form</span> element</li>
+							<li>wrap <span class="nt highlighter">input</span> element into <span class="s highlighter">.input-group</span> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+		<p>Example</p>
+		<form class="form-inline">
+			<label class="sr-only" for="uname">Username</label>
+			<div class="input-group mb-2 mr-sm-2 mb-sm-0 input-icon">
+				<div class="input-group-addon"><i class="fa fa-user"></i></div>
+				<input type="text" class="form-control" id="uname" placeholder="Username">
+			</div>
+			<label class="sr-only" for="email">email</label>
+			<div class="input-group mb-2 mr-sm-2 mb-sm-0 input-icon">
+				<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+				<input type="email" class="form-control" id="email" placeholder="Email">
+			</div>
+			<button type="submit" class="btn btn-primary btn-lg">Subscribe</button>
+		</form>
+	</div>
+	<!-- Inline form end -->
+
+	<!-- Defining states start -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingEight">
+				<h3 class="mb-0">
+					Validation states
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html">
+<code>
+
+	&lt;!-- Valid Field -->
+	<div class="col-md-6 mb-3">
+	  <label for="validationServer01">First name</label>
+	  <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+	</div>
+
+	&lt;!-- Invalid Field -->
+	<div class="col-md-3 mb-3">
+	  <label for="validationServer04">State</label>
+	  <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+	  <div class="invalid-feedback">
+	    Please provide a valid state.
+	  </div>
+	</div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>Validation states help give users an instance visual feedback. class <span class="s highlighter">.is-valid</span> uses for valid input field and use <span class="s highlighter">.is-invalid</span> for invalid field  </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+		<p>Example</p>
+		<form>
+		  <div class="row">
+		    <div class="col-md-6 mb-3">
+		      <label for="validationServer01">First name</label>
+		      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+		    </div>
+		    <div class="col-md-6 mb-3">
+		      <label for="validationServer02">Last name</label>
+		      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Otto" required>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-6 mb-3">
+		      <label for="validationServer03">City</label>
+		      <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+		      <div class="invalid-feedback">
+		        Please provide a valid city.
+		      </div>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="validationServer04">State</label>
+		      <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+		      <div class="invalid-feedback">
+		        Please provide a valid state.
+		      </div>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="validationServer05">Zip</label>
+		      <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
+		      <div class="invalid-feedback">
+		        Please provide a valid zip.
+		      </div>
+		    </div>
+		  </div>
+
+		  <button class="btn btn-primary" type="submit">Submit form</button>
+		</form>
+	</div>
+	<!-- Defining states end -->
+
+</div>
+@@include('element-footer.htm')

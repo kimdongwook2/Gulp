@@ -1,0 +1,137 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-image"
+})
+@@include('element-top-area.htm',{
+	"active": "elements-image"
+})
+	
+	
+	<!-- =============================================
+	## image
+	=============================================== -->
+	<div id="image" class="element_single">
+		<!-- image Default -->
+		<div id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="card single-block">
+				<div class="card-header" role="tab" id="headingOne">
+					<h3 class="mb-0">
+						Image Example
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							&lt;&gt;  show code
+						</a>
+					</h2>
+				</div>
+	
+				<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+					<div class="card-block">
+						<div class="code_container">
+	
+							<pre class="language-html">
+	<code>
+		&lt;!-- image Default -->
+		&lt;div class="row">
+			&lt;div class="col-md-4">
+				&lt;div class="image_container">
+					&lt;img src="assets/img/elm/el9.jpg" alt="gallery">
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	
+		&lt;!-- image rounded -->
+		&lt;div class="image_container">
+			&lt;img class="image_rounded" src="assets/img/gallery/g1.jpg" alt="gallery">
+		&lt;/div>
+	
+		&lt;!-- image circle -->
+		&lt;div class="image_container image_circle">
+			&lt;img src="assets/img/gallery/g1.jpg" alt="gallery">
+		&lt;/div>
+	
+		&lt;!-- image bordered -->
+		&lt;div class="image_container">
+			&lt;img class="image_bordered" src="assets/img/gallery/g1.jpg" alt="gallery">
+		&lt;/div>
+	</code>
+							</pre>
+							<h5>How to use</h5>
+							<ul>
+								<li>Use <span class="s highlighter">.image_container</span> wrapper for <span class="nt highlighter">&lt;img&gt;</span> element</li>
+								<li>Use <span class="s highlighter">.image_rounded</span>, <span class="s highlighter">.image_circle</span> , <span class="s highlighter">.image_bordered</span> with <span class="nt highlighter">&lt;img&gt;</span> element for rounded, circle or bordered image style </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="display-single_element">
+		<p>Example</p>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="image_container">
+						<img src="assets/img/elm/el7.jpg" alt="gallery">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="image_container">
+						<img src="assets/img/elm/el8.jpg" alt="gallery">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="image_container">
+						<img src="assets/img/elm/el9.jpg" alt="gallery">
+					</div>
+				</div>
+			</div>
+			<h3 style="margin: 30px 0 0">Rounded image</h3>
+	
+			<div class="row">
+				<div class="col-md-6">
+					<div class="image_container">
+						<img class="image_rounded" src="assets/img/elm/el9.jpg" alt="gallery">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="image_container">
+						<img class="image_rounded" src="assets/img/elm/el10.jpg" alt="gallery">
+					</div>
+				</div>
+			</div>
+			<h3 style="margin: 30px 0 0">Circle image</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="image_container image_circle">
+						<img class="" src="assets/img/elm/square.jpg" alt="gallery">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="image_container image_circle">
+						<img class="" src="assets/img/elm/square.jpg" alt="gallery">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="image_container image_circle">
+						<img class="" src="assets/img/elm/square.jpg" alt="gallery">
+					</div>
+				</div>
+			</div>
+			<h3 style="margin: 30px 0 0">Bordered Image</h3>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="image_container">
+						<img class="image_bordered" src="assets/img/elm/el9.jpg" alt="gallery">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="image_container">
+						<img class="image_bordered" src="assets/img/elm/el10.jpg" alt="gallery">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Images ends-->
+	</div>
+	
+	@@include('element-footer.htm')
+	

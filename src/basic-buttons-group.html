@@ -1,0 +1,261 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-buttons-group"
+})
+@@include('element-top-area.htm', {	
+	"active": "elements-buttons-group"
+})
+
+<!-- =============================================
+## button-group
+=============================================== -->
+<div id="button-group" class="element_single">
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					Button groups
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+				   	<div class="code_container">
+						
+						<pre class="language-html">
+<code>
+	&lt;!-- Default button group -->
+	&lt;div class="btn-group" role="group" aria-label="Basic example">
+	  &lt;button type="button" class="btn btn-primary">Left&lt;/button>
+	  &lt;button type="button" class="btn btn-primary">Middle&lt;/button>
+	  &lt;button type="button" class="btn btn-primary">Right&lt;/button>
+	&lt;/div>
+
+	&lt;!-- Outlined button group -->
+	&lt;div class="btn-group" role="group" aria-label="Basic example">
+	  &lt;button type="button" class="btn btn-primary-outlined">Left&lt;/button>
+	  &lt;button type="button" class="btn btn-primary-outlined">Middle&lt;/button>
+	  &lt;button type="button" class="btn btn-primary-outlined">Right&lt;/button>
+	&lt;/div>
+
+	&lt;!-- Rounded button group -->
+	&lt;div class="btn-group" role="group" aria-label="Basic example">
+	  &lt;button type="button" class="btn btn-success btn-rounded">Left&lt;/button>
+	  &lt;button type="button" class="btn btn-success btn-rounded">Middle&lt;/button>
+	  &lt;button type="button" class="btn btn-success btn-rounded">Right&lt;/button>
+	&lt;/div>
+</code>
+					   </pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>Wrap a series of buttons with <span class="s highlighter"> .btn</span> into a <span class="s highlighter">.btn-group</span> parent wrapper.</li>
+						</ul>
+				 	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p>Example:</p>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-secondary">Left</button>
+		  <button type="button" class="btn btn-secondary">Middle</button>
+		  <button type="button" class="btn btn-secondary">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-primary">Left</button>
+		  <button type="button" class="btn btn-primary">Middle</button>
+		  <button type="button" class="btn btn-primary">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-success">Left</button>
+		  <button type="button" class="btn btn-success">Middle</button>
+		  <button type="button" class="btn btn-success">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-info">Left</button>
+		  <button type="button" class="btn btn-info">Middle</button>
+		  <button type="button" class="btn btn-info">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-warning">Left</button>
+		  <button type="button" class="btn btn-warning">Middle</button>
+		  <button type="button" class="btn btn-warning">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-danger">Left</button>
+		  <button type="button" class="btn btn-danger">Middle</button>
+		  <button type="button" class="btn btn-danger">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-inverse">Left</button>
+		  <button type="button" class="btn btn-inverse">Middle</button>
+		  <button type="button" class="btn btn-inverse">Right</button>
+		</div>
+	
+	<h3 style="margin: 30px 0">Outlined button group</h3>
+	
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-secondary-outlined">Left</button>
+		  <button type="button" class="btn btn-secondary-outlined">Middle</button>
+		  <button type="button" class="btn btn-secondary-outlined">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-primary-outlined">Left</button>
+		  <button type="button" class="btn btn-primary-outlined">Middle</button>
+		  <button type="button" class="btn btn-primary-outlined">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-success-outlined">Left</button>
+		  <button type="button" class="btn btn-success-outlined">Middle</button>
+		  <button type="button" class="btn btn-success-outlined">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-info-outlined">Left</button>
+		  <button type="button" class="btn btn-info-outlined">Middle</button>
+		  <button type="button" class="btn btn-info-outlined">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-warning-outlined">Left</button>
+		  <button type="button" class="btn btn-warning-outlined">Middle</button>
+		  <button type="button" class="btn btn-warning-outlined">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-danger-outlined">Left</button>
+		  <button type="button" class="btn btn-danger-outlined">Middle</button>
+		  <button type="button" class="btn btn-danger-outlined">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-inverse-outlined">Left</button>
+		  <button type="button" class="btn btn-inverse-outlined">Middle</button>
+		  <button type="button" class="btn btn-inverse-outlined">Right</button>
+		</div>
+	
+	<h3 style="margin: 30px 0">Rounded button group</h3>
+	
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-secondary btn-rounded">Left</button>
+		  <button type="button" class="btn btn-secondary btn-rounded">Middle</button>
+		  <button type="button" class="btn btn-secondary btn-rounded">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-primary btn-rounded">Left</button>
+		  <button type="button" class="btn btn-primary btn-rounded">Middle</button>
+		  <button type="button" class="btn btn-primary btn-rounded">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-success btn-rounded">Left</button>
+		  <button type="button" class="btn btn-success btn-rounded">Middle</button>
+		  <button type="button" class="btn btn-success btn-rounded">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-info btn-rounded">Left</button>
+		  <button type="button" class="btn btn-info btn-rounded">Middle</button>
+		  <button type="button" class="btn btn-info btn-rounded">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-warning btn-rounded">Left</button>
+		  <button type="button" class="btn btn-warning btn-rounded">Middle</button>
+		  <button type="button" class="btn btn-warning btn-rounded">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-danger btn-rounded">Left</button>
+		  <button type="button" class="btn btn-danger btn-rounded">Middle</button>
+		  <button type="button" class="btn btn-danger btn-rounded">Right</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+		  <button type="button" class="btn btn-inverse btn-rounded">Left</button>
+		  <button type="button" class="btn btn-inverse btn-rounded">Middle</button>
+		  <button type="button" class="btn btn-inverse btn-rounded">Right</button>
+		</div>
+	</div>
+	<!-- Default buttons group ends here -->
+
+	<!-- More Button toolbar start -->
+		<div id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="card single-block">
+				<div class="card-header" role="tab" id="headingThree">
+					<h3 class="mb-0">
+						Size Variations
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						  &lt;&gt;  show code
+						</a>
+					</h3>
+				</div>
+
+				<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="card-block">
+					   	<div class="code_container">
+					   	btn-search
+							<pre class="language-html">
+<code>
+	&lt;!-- Small button group -->
+	&lt;div class="btn-group" role="group" aria-label="Basic example">
+	  &lt;button type="button" class="btn btn-secondary btn-sm">Left&lt;/button>
+	  &lt;button type="button" class="btn btn-secondary btn-sm">Middle&lt;/button>
+	  &lt;button type="button" class="btn btn-secondary btn-sm">Right&lt;/button>
+	&lt;/div>
+
+	&lt;!-- Medium button group -->
+	&lt;div class="btn-group" role="group" aria-label="Basic example">
+	  &lt;button type="button" class="btn btn-primary btn-mid">Left&lt;/button>
+	  &lt;button type="button" class="btn btn-primary btn-mid">Middle&lt;/button>
+	  &lt;button type="button" class="btn btn-primary btn-mid">Right&lt;/button>
+	&lt;/div>
+
+	&lt;!-- Default size button group -->
+	&lt;div class="btn-group" role="group" aria-label="Basic example">
+	  &lt;button type="button" class="btn btn-info btn-default">Left&lt;/button>
+	  &lt;button type="button" class="btn btn-info btn-default">Middle&lt;/button>
+	  &lt;button type="button" class="btn btn-info btn-default">Right&lt;/button>
+	&lt;/div>
+
+	&lt;!-- Large button group -->
+	&lt;div class="btn-group" role="group" aria-label="Basic example">
+	  &lt;button type="button" class="btn btn-danger btn-lg">Left&lt;/button>
+	  &lt;button type="button" class="btn btn-danger btn-lg">Middle&lt;/button>
+	  &lt;button type="button" class="btn btn-danger btn-lg">Right&lt;/button>
+	&lt;/div>
+</code>
+							</pre>
+							<h5>How to use</h5>
+							<ul>
+								<li>Based on different button size use <span class="s highlighter">.btn-sm</span> ,<span class="s highlighter">.btn-mid</span> , <span class="s highlighter">.btn-lg</span> , <span class="s highlighter">.btn-default</span> class with <span class="s highlighter"> .btn</span></li>
+							</ul>
+					   	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="display-single_element">
+			<p>Example:</p>
+			<div class="btn-group" role="group" aria-label="Basic example">
+			  <button type="button" class="btn btn-secondary btn-sm">Left</button>
+			  <button type="button" class="btn btn-secondary btn-sm">Middle</button>
+			  <button type="button" class="btn btn-secondary btn-sm">Right</button>
+			</div>
+			<div class="btn-group" role="group" aria-label="Basic example">
+			  <button type="button" class="btn btn-primary btn-mid">Left</button>
+			  <button type="button" class="btn btn-primary btn-mid">Middle</button>
+			  <button type="button" class="btn btn-primary btn-mid">Right</button>
+			</div>
+			<div class="btn-group" role="group" aria-label="Basic example">
+			  <button type="button" class="btn btn-info btn-default">Left</button>
+			  <button type="button" class="btn btn-info btn-default">Middle</button>
+			  <button type="button" class="btn btn-info btn-default">Right</button>
+			</div>
+			<div class="btn-group" role="group" aria-label="Basic example">
+			  <button type="button" class="btn btn-danger btn-lg">Left</button>
+			  <button type="button" class="btn btn-danger btn-lg">Middle</button>
+			  <button type="button" class="btn btn-danger btn-lg">Right</button>
+			</div>
+		</div>
+	<!-- More Button toolbar end -->
+	
+</div>
+
+@@include('element-footer.htm')

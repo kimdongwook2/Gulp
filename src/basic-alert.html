@@ -1,0 +1,190 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-alert"
+})
+@@include('element-top-area.htm', {
+	"active": "elements-alert"
+})
+
+<!-- =============================================
+## Alerts
+=============================================== -->
+<div id="alert" class="element_single">
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					Alerts
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						&lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+					<div class="code_container">
+						<pre  class="language-html ">
+<code>
+	&lt;div class="alert alert-primary" role="alert">
+	  This is a primary alert—check it out!
+	&lt;/div>
+	&lt;div class="alert alert-secondary" role="alert">
+	  This is a secondary alert—check it out!
+	&lt;/div>
+	&lt;div class="alert alert-success" role="alert">
+	  This is a success alert—check it out!
+	&lt;/div>
+
+	&lt;!--Link Color&lt; -->
+	&lt;div class="alert alert-warning" role="alert">
+	  This is a warning alert with &lt;a href="#" class="alert-link">an example link&lt;/a>. Give it a click if you like.
+	&lt;/div>
+	&lt;div class="alert alert-info" role="alert">
+	  This is a info alert with &lt;a href="#" class="alert-link">an example link&lt;/a>. Give it a click if you like.
+	&lt;/div>
+	&lt;div class="alert alert-light" role="alert">
+	  This is a light alert with &lt;a href="#" class="alert-link">an example link&lt;/a>. Give it a click if you like.
+	&lt;/div>
+
+	&lt;!--Additional Content&lt; -->
+	&lt;div class="alert alert-success" role="alert">
+	  &lt;h4 class="alert-heading ">Well done!&lt;/h4>
+	  &lt;p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.&lt;/p>
+	  &lt;hr>
+	  &lt;p class="mb-0 ">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.&lt;/p>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<p>Alert is useful to provide feedback for perticuler user actions. Here’s the example of how to use it:</p>
+						<ul>
+							<li>Be sure you’ve loaded the compiled <a href="https://getbootstrap.com/docs/4.0/components/alerts/"><mark>Bootstrap JavaScript</mark></a>.</li>
+							<li>Use the <span class="s highlighter">.alert</span> class to alert message wrapper </li>
+							<li>Use the contextual class <span class="s highlighter">.alert-primary</span>, <span class="s highlighter">.alert-secondary</span>, <span class="s highlighter">.alert-success</span> , <span class="s highlighter">.alert-info</span> , <span class="s highlighter">.alert-warning</span> , <span class="s highlighter">.alert-danger</span>, <span class="s highlighter">.alert-light</span>, <span class="s highlighter">.alert-dark</span> with the <span class="s highlighter">.alert</span> class for pre-styled alert</li>
+							<li>To add link within alert message use <span class="s highlighter">.alert-link</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+		<div class="alert alert-primary" role="alert">
+		  This is a primary alert—check it out!
+		</div>
+		<div class="alert alert-secondary" role="alert">
+		  This is a secondary alert—check it out!
+		</div>
+		<div class="alert alert-success" role="alert">
+		  This is a success alert—check it out!
+		</div>
+		<div class="alert alert-danger" role="alert">
+		  This is a danger alert—check it out!
+		</div>
+		<div class="alert alert-warning" role="alert">
+		  This is a warning alert—check it out!
+		</div>
+		<div class="alert alert-info" role="alert">
+		  This is a info alert—check it out!
+		</div>
+		<div class="alert alert-light" role="alert">
+		  This is a light alert—check it out!
+		</div>
+		<div class="alert alert-dark" role="alert">
+		  This is a dark alert—check it out!
+		</div>
+	</div>
+
+	<h3 style="margin-bottom: 30px;">Link Color</h3>
+	<div class="display-single_element">
+		<div class="alert alert-primary" role="alert">
+		  This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+		</div>
+		<div class="alert alert-secondary" role="alert">
+		  This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+		</div>
+		<div class="alert alert-success" role="alert">
+		  This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+		</div>
+		<div class="alert alert-danger" role="alert">
+		  This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+		</div>
+		<div class="alert alert-warning" role="alert">
+		  This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+		</div>
+		<div class="alert alert-info" role="alert">
+		  This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+		</div>
+		<div class="alert alert-light" role="alert">
+		  This is a light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+		</div>
+		<div class="alert alert-dark" role="alert">
+		  This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+		</div>
+	</div>
+	<h3 style="margin-bottom: 30px;">Additional Content</h3>
+	<div class="display-single_element">
+		<div class="alert alert-success" role="alert">
+		  <h4 class="alert-heading">Well done!</h4>
+		  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+		  <hr>
+		  <p class="mb-0 ">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+		</div>
+	</div>
+
+	<!-- Default Alert ends here -->
+
+
+	<!-- Dismiting alert start -->
+	<div id="accordion2" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingFour">
+				<h3 class="mb-0">
+					Dismissable alert with icon
+					<a data-toggle="collapse" data-parent="#accordion2" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+						&lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html ">
+<code>
+	&lt;div class="iconic-alert">
+		&lt;div class="alert alert-warning alert-dismissible fade show" role="alert">
+		  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    &lt;span aria-hidden="true">&times;&lt;/span>
+		  &lt;/button>
+		  &lt;strong>&lt;i class="fa fa-warning">&lt;/i> Warning!&lt;/strong> You should check in on some of those fields below.
+		&lt;/div>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>For the icon in the alert box use an class <span class="s highlighter">.iconic-alert</span> in the parent wrapper</li>
+							<li>Use any icon (here FontAwesome icon used) into an <span class="nt highlighter">&lt;i&gt;</span> element</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element iconic-alert">
+		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		  <strong><i class="fa fa-warning"></i> Warning!</strong> You should check in on some of those fields below.
+		</div>
+	</div>
+	<!-- Dismiting alert end -->
+
+</div>
+
+@@include('element-footer.htm')

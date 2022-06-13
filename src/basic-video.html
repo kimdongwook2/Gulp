@@ -1,0 +1,125 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-video"
+})
+@@include('element-top-area.htm',{
+	"active": "elements-video"
+})
+
+<!-- =============================================
+## video
+=============================================== -->
+<div id="video" class="element_single">
+<!-- video Default -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					Video
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  &lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+				   <div class="code_container">
+						<pre class="language-html">
+<code>
+	&lt;!-- Youtube player -->
+	&lt;div class="fluid-width-video-wrapper" style="padding-top: 56.25%;">
+		&lt;iframe src="https://www.youtube.com/embed/xULxQl-6HXU?rel=0&amp;showinfo=0" allowfullscreen="" id="fitvid0">&lt;/iframe>
+	&lt;/div>
+
+	&lt;!-- Vimeo player -->
+	&lt;div class="fluid-width-video-wrapper" style="padding-top: 56.2%;">
+		&lt;iframe src="https://player.vimeo.com/video/23741658" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>&lt;/iframe>
+	&lt;/div>
+
+	&lt;!-- Default player -->
+	&lt;div class="promo-video bg-image" style="background-image: url('img/home/v-poster-s.jpg');">
+		&lt;div class="video-button video-box">
+			&lt;a href="javascript:void(0)">
+				&lt;i class="fa fa-play play-icon" aria-hidden="true" data-video="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1">&lt;/i>
+			&lt;/a>
+		&lt;/div>
+	&lt;/div>
+
+	&lt;!-- Soundcloud -->
+	&lt;div class="video-container fluid-width-video-wrapper"  style="padding-top: 46%;">
+		&lt;iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/46290733&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true">&lt;/iframe>
+	&lt;/div>
+
+	&lt;!-- Default audio -->
+	&lt;audio controls="controls" preload="auto">
+	     &lt;source src="https://raw.githubusercontent.com/kolber/audiojs/master/mp3/bensound-dubstep.mp3">
+	&lt;/audio>
+</code>
+						</pre>
+						<h5>how to use</h5>
+						<ul>
+							<li>Wrap the <span class="nt highlighter">&lt;iframe&gt;</span> elements into <span class="s highlighter">.fluid-width-video-wrapper</span> </li>
+							<li>For the default video player, make sure you are using the classes used in the example code above. For customization, add your own class and overwrite the default properties</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+		<h3 style="margin: 30px 0 15px">Youtube player</h3>
+		<p style="font-size: 18px;">Example</p>
+		<div class="fluid-width-video-wrapper" style="padding-top: 56.25%;">
+			<iframe src="https://www.youtube.com/embed/9xwazD5SyVg" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<h3 style="margin: 30px 0 15px">Vimeo player</h3>
+		<p style="font-size: 18px;">Example</p>
+
+		<div class="fluid-width-video-wrapper" style="padding-top: 56.2%;">
+			<iframe src="https://player.vimeo.com/video/23741658" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+
+
+		<h3 style="margin: 30px 0 15px">Default player</h3>
+		<p style="font-size: 18px;">Example</p>
+
+		<!-- <div class="box-video">
+		  <div class="bg-video" style="background-image: url('img/poster2.jpg');">
+		    <div class="btn-play">Play</div>
+		  </div>
+		  <div class="video-container fluid-width-video-wrapper"  style="padding-top: 56.2%;">
+		    <iframe src="https://www.youtube.com/embed/xULxQl-6HXU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+		  </div>
+		</div> -->
+
+		<div class="promo-video bg-image" style="background-image: url('img/home/v-poster-s.jpg');">
+			<div class="video-button video-box">
+				<a href="javascript:void(0)">
+					<i class="fa fa-play play-icon" aria-hidden="true" data-video="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="display-single_element">
+		<h3 style="margin: 30px 0 15px">Soundcloud</h3>
+		<p style="font-size: 18px;">Example</p>
+		<div class="video-container fluid-width-video-wrapper"  style="padding-top: 46%;">
+			<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/46290733&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		</div>
+		<h3 style="margin: 30px 0 15px">Default audio</h3>
+		<p style="font-size: 18px;">Example</p>
+
+		<audio controls="controls" preload="auto">
+		     <source src="https://raw.githubusercontent.com/kolber/audiojs/master/mp3/bensound-dubstep.mp3">
+		</audio>
+	</div>
+	<!--  Default ends-->
+
+</div>
+
+@@include('element-footer.htm')

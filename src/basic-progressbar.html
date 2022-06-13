@@ -1,0 +1,348 @@
+@@include('header.htm', {
+  "title": "Elements - BIGBAG Store",
+  "parent": "components",
+  "active": "basic-progressbar"
+})
+@@include('element-top-area.htm',{
+"active": "elements-progressbar"
+})
+
+
+<!-- =============================================
+## progressbar
+=============================================== -->
+<div id="element_progressbar" class="element_single">
+	<!-- Progressbar Default -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingOne">
+				<h3 class="mb-0">
+					progressbar
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						&lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="card-block">
+					<div class="code_container">
+						
+						<pre class="language-html">
+<code>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	
+</code>	
+						</pre>
+						<h5>How to use</h5>
+						<p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.</p>
+						<ul>
+							<li>Use the <span class="s highlighter">.progress</span> as a wrapper to indicate the max value of the progress bar.</li>
+							<li>We use the inner <span class="s highlighter">.progress-bar</span> to indicate the progress so far.</li>
+							<li>The <span class="s highlighter">.progress-bar</span> requires an inline style, utility class, or custom CSS to set their width.</li>
+							<li>The <span class="s highlighter">.progress-bar</span> also requires some <span class="na highlighter">role</span> and <span class="na highlighter">aria</span> attributes to make it accessible.</li>
+							<li>Add labels to your progress bars by placing text within <span class="s highlighter">.progress-bar</span></li>
+							<li>Used class <span class="s highlighter">.bordered</span> to set a border around the progressbar </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p>Example</p>
+		<div class="progress bordered">
+			<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress bordered">
+			<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress bordered">
+			<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>	
+	</div>
+	<!-- progressbar Default ends-->
+
+	<!-- Backgrounds markup -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingTwo">
+				<h3 class="mb-0">
+					Background color variations
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						&lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html">
+<code>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	
+	&lt;!-- striped progress bar -->
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>how to use</h5>
+						<ul>
+							<li>use contextual classes for balckground color with <span class="s highlighter">.bg-success</span> with <span class="s highlighter">.progress-bar</span> For avaliable contextual class <a href="elements-buttons.html"><mark>see here</mark></a></li>
+							<li>Use <span class="s highlighter">.progress-bar-striped</span> for stripped background</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p>Example</p>
+		<div class="progress bordered">
+			<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress bordered">
+			<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress bordered">
+			<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress bordered">
+			<div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+
+	<h3 style="margin-bottom: 20px;">Striped progress bar</h3>
+	<div class="display-single_element">
+		<p>Example</p>
+		<div class="progress bordered">
+			<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress bordered">
+			<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress bordered">
+			<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress bordered">
+			<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress bordered">
+			<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+	<!-- Backgrounds ends-->
+
+	<!-- Multiple -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingThree">
+				<h3 class="mb-0">
+					Multiple Bars
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						&lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html">
+<code>
+	&lt;div class="progress bordered">
+		&lt;div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+		&lt;div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+		&lt;div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">&lt;/div>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>Set <span class="s highlighter">.progress-bar</span> width either inline styling or using the class</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p>Example</p>
+		<div class="progress bordered">
+			<div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+			<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+			<div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+	<!-- Multiple ends-->
+
+	<!-- Animated stripes -->
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingFour">
+				<h3 class="mb-0">
+					Animated stripes
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+						&lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html">
+<code>
+	&lt;div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>Use <span class="s highlighter">.progress-bar-animated</span> for animated progressbar</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p>Example</p>
+		<div class="progress bordered">
+			<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+		</div>
+	</div>
+	<!-- Animated stripes ends-->
+
+	<!-- <div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card single-block">
+			<div class="card-header" role="tab" id="headingFive">
+				<h3 class="mb-0">
+					Cicle progress
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+						&lt;&gt;  show code
+					</a>
+				</h3>
+			</div>
+
+			<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+				<div class="card-block">
+					<div class="code_container">
+						<pre class="language-html">
+<code>
+	&lt;div data-value="0.85" 
+		data-thickness="6"
+      	class="circle1"
+		data-fill="{
+        &quot;color&quot;: &quot;#7bd1df&quot;
+      	}" > 
+		&lt;strong>85%&lt;/strong>
+		&lt;span class="text">Wordpress&lt;/span>
+	&lt;/div>
+</code>
+						</pre>
+						<h5>How to use</h5>
+						<ul>
+							<li>Circle progress bar is designed using <a href="https://github.com/kottenator/jquery-circle-progress" target="_blank"><mark>jquery-circle-progress</mark></a> api.</li>
+							<li>Use a class of ID as a hook in the main js file.</li>
+							<li>You can either declare values using <span class="na highlighter">data-</span> attribute like the code above or through the javascript as shown below. 
+						<pre class="language-javascript">
+<code>
+	$('#circle1').circleProgress({
+	    value: 0.75,
+	    size: 80,
+	    fill: {
+	      gradient: ["red", "orange"]
+	    }
+	  });
+</code>
+						</pre>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="display-single_element">
+		<p>Example</p>
+		<div class="circle-progress">
+			<div class="row text-center">
+				<div class="col-md-3">
+					<div data-value="0.85"
+						data-thickness="6"
+				      	class="circle1"
+						data-fill="{
+				        &quot;color&quot;: &quot;#7bd1df&quot;
+				      	}"> 
+						<strong>85%</strong>
+						<span class="text">Wordpress</span>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div data-value="0.65" data-thickness="6" class="circle1" data-fill="{
+				        &quot;color&quot;: &quot;#49c32c&quot;
+				      	}">
+						<strong>65%</strong>
+						<span class="text">Web Design</span>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div data-value="0.87" data-thickness="6" class="circle1" data-fill="{
+				        &quot;color&quot;: &quot;#439fdb&quot;
+				      	}">
+						<strong>87%</strong>
+						<span class="text">Html</span>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div data-value="0.83" data-thickness="6" class="circle1" data-fill="{
+				        &quot;color&quot;: &quot;#eabf38&quot;
+				      	}">
+						<strong>83%</strong>
+						<span class="text">Jquery</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	
+</div>
+
+@@include('element-footer.htm')
+
+<script type="text/javascript">
+	
+</script>
